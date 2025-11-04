@@ -30,7 +30,7 @@ library(ggplot2)
 
 - Survey design
 
-- Evaluation model distributional assumptions
+- Evaluating model distributional assumptions
 
 - Evaluating the ability to estimate quantities / model bias
 

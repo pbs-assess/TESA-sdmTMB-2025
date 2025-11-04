@@ -62,7 +62,7 @@ qqnorm(rq_res);abline(0, 1)
 
 ### Exercise:
 
-1.  How do this look?
+1.  How does this look?
 2.  Why do they look the way that they do?
 
 Now let's generate residuals for the negative binomial GLM:
@@ -75,7 +75,7 @@ qqnorm(rq_res);abline(0, 1)
 
 ### Exercise:
 
-1.  How do this look?
+1.  How does this look?
 2.  Does this look good enough?
 
 # Simulation based randomized quantile residuals

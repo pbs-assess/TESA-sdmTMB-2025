@@ -11,7 +11,7 @@ execute:
 
 -   Practice fitting a basic spatiotemporal model.
 -   Gain experience using cross validation for model selection.
--   Gain experience with anistropy.
+-   Gain experience with anisotropy.
 -   Understand how to inspect the model output.
 -   Practice predicting from the model on new data and making visualizations of those predictions.
 -   Gain familiarity with fitting and interpreting different random field structures.
