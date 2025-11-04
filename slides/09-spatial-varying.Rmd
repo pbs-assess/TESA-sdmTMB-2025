@@ -14,7 +14,7 @@ output:
 ---
 
 ```{r preamble, include=FALSE, cache=FALSE}
-source(here::here("preamble.R"))
+source(here::here("slides/preamble.R"))
 do.call(knitr::opts_chunk$set, knitr_opts)
 ```
 

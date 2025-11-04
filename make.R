@@ -1,13 +1,15 @@
-future::plan(future::multisession)
+future::plan(future::multisession, workers = 6L)
 options(future.rng.onMisuse = "ignore")
 
-PARALLEL <- F
+PARALLEL <- T
 BUILD_RMD <- T
 BUILD_QMD <- T
 
 folder <- "."
-files <- list.files(folder, pattern = "\\.Rmd$")
+slides_folder <- "slides"
+files <- list.files(slides_folder, pattern = "\\.Rmd$")
 files <- gsub("\\.Rmd$", "", files)
+files <- file.path(slides_folder, files)
 pwd <- getwd()
 
 # files <- files[!grepl("^99", files)]
@@ -86,7 +88,7 @@ if (!PARALLEL) {
 
 # Remove _cache folders after building
 cache_folders <- list.files(
-  here::here(folder),
+  here::here(slides_folder),
   pattern = "_cache$",
   full.names = TRUE,
   recursive = TRUE,
